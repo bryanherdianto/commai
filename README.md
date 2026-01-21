@@ -119,4 +119,8 @@ Create a .env file in the root directory and add your API key:
 
 ## Live Website
 
+Access the live application here: [https://commai.streamlit.app/](https://commai.streamlit.app/)
+
 ## Video Demo
+
+A comprehensive video demonstration explaining the multi-agent architecture and system functionality is available here: [https://youtu.be/7NdGish7pVk](https://youtu.be/7NdGish7pVk)
