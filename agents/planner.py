@@ -1,4 +1,5 @@
 import os
+import streamlit as st
 import logging
 from google import genai
 from google.genai import types
@@ -67,7 +68,7 @@ class PlannerAgent:
 
     def __init__(self):
         """Initialize the Planner agent with Gemini API."""
-        api_key = os.getenv("GEMINI_API_KEY")
+        api_key = os.getenv("GEMINI_API_KEY") or st.secrets.get("GEMINI_API_KEY")
         if not api_key:
             raise ValueError("GEMINI_API_KEY not found in environment variables")
 

@@ -1,4 +1,5 @@
 import os
+import streamlit as st
 import pandas as pd
 import logging
 from google import genai
@@ -40,7 +41,7 @@ class ExecutorAgent:
 
     def __init__(self):
         """Initialize the Executor agent with Gemini API."""
-        self.api_key = os.getenv("GEMINI_API_KEY")
+        self.api_key = os.getenv("GEMINI_API_KEY") or st.secrets.get("GEMINI_API_KEY")
         if not self.api_key:
             raise ValueError("GEMINI_API_KEY not found in environment variables")
 

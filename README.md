@@ -49,7 +49,7 @@ The application follows a structured orchestration pattern:
 
 ```txt
 csv_chatbot/
-├── app.py                 # Main Streamlit application and UI orchestration
+├── app.py                # Main Streamlit application and UI orchestration
 ├── agents/
 │   ├── planner.py        # Logic for query analysis and plan generation
 │   └── executor.py       # Logic for code generation and data execution
@@ -119,6 +119,4 @@ Create a .env file in the root directory and add your API key:
 
 ## Live Website
 
-
 ## Video Demo
-
